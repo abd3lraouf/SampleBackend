@@ -6,12 +6,11 @@ import io.ktor.server.response.respondText
 import io.ktor.server.routing.get
 import io.ktor.server.routing.routing
 
-fun Application.configureRouting() {
+fun Application.configureBooks() {
 
-    // Starting point for a Ktor app:
     routing {
-        get("/") {
-            call.respondText("Hello World!")
+        get("/books") {
+            call.respondText("Book 1")
         }
     }
 }
